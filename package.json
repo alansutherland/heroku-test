@@ -1,9 +1,9 @@
 {
   "name": "create-next-example-app",
   "scripts": {
-    "dev": "next",
+    "dev": "yarn add git@github.com:alansutherland/heroku-test.git && next",
     "build": "next build",
-    "start": "next start"
+    "start": "yarn build && next start -p $PORT"
   },
   "dependencies": {
     "next": "^6.0.0",
